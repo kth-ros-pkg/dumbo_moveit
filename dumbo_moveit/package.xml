@@ -1,0 +1,22 @@
+<package>
+  <name>dumbo_moveit</name>
+  <version>1.0.0</version>
+  <description>
+    Moveit! packages for CVAP's Dumbo robot.
+  </description>
+  <maintainer email="fevb@kth.se">Francisco Vina</maintainer>
+  <license>BSD</license>
+
+  <url>http://wiki.ros.org/dumbo_moveit</url>
+
+  <author email="fevb@kth.se">Francisco Vina</author>
+  <maintainer email="fevb@kth.se">Francisco Vina</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>dumbo_moveit_config</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
