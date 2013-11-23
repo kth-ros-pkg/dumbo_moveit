@@ -1,0 +1,9 @@
+<library path="libdumbo_moveit_arm_kinematics">
+  <class name="dumbo_arm_kinematics/DUMBOArmKinematicsPlugin" type="dumbo_arm_kinematics::DUMBOArmKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    <description>
+      A implementation of kinematics for the DUMBO arm.
+    </description>
+  </class>
+</library>
+
+
