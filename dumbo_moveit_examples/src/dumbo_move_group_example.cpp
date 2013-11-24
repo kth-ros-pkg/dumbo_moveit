@@ -62,10 +62,13 @@ int main(int argc, char **argv)
 	q.setRPY(roll, pitch, yaw);
 	tf::quaternionTFToMsg(q, p.orientation);
 
+	geometry_msgs::PoseStamped p_stamped;
+	p_stamped.pose = p;
+	p_stamped.header.frame_id = "arm_base_link";
+	p_stamped.header.stamp = ros::Time::now();
 
-	l_group.setPoseTarget(p);
-	l_group.setGoalPositionTolerance(0.1);
-	l_group.setGoalOrientationTolerance(0.1);
+
+	l_group.setPoseTarget(p_stamped);
 
 	l_group.move();
 
