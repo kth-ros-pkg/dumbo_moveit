@@ -10,6 +10,6 @@
   <arg name="moveit_controller_manager" default="dumbo" />
   <include file="$(find dumbo_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch" />
 
-  <param name="trajectory_execution/allowed_execution_duration_scaling" value="1.5"/>
+  <param name="trajectory_execution/execution_duration_monitoring" value="false"/>
   
 </launch>

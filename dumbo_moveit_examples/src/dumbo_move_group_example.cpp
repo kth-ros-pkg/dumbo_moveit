@@ -47,9 +47,25 @@ int main(int argc, char **argv)
 	move_group_interface::MoveGroup l_group("left_arm");
 	move_group_interface::MoveGroup r_group("right_arm");
 
+
 	// set position and orientation of left_arm_7_link with respect to arm_base_link
-	l_group.setPositionTarget(-0.486, 0.367, 0.0);
-	l_group.setRPYTarget(1.571, 1.571, 3.13);
+	geometry_msgs::Pose p;
+
+	p.position.x = -0.486;
+	p.position.y = 0.367;
+	p.position.z = 0.0;
+
+	double roll = 1.571;
+	double pitch = 1.571;
+	double yaw = 3.13;
+	tf::Quaternion q;
+	q.setRPY(roll, pitch, yaw);
+	tf::quaternionTFToMsg(q, p.orientation);
+
+
+	l_group.setPoseTarget(p);
+	l_group.setGoalPositionTolerance(0.1);
+	l_group.setGoalOrientationTolerance(0.1);
 
 	l_group.move();
 
@@ -61,8 +77,6 @@ int main(int argc, char **argv)
 	l_group.move();
 
 	r_group.move();
-
-	ros::Duration(5.0).sleep();
 
 	ros::shutdown();
 	return 0;

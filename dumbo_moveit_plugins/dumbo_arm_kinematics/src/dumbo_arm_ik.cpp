@@ -260,7 +260,9 @@ void DUMBOArmIK::computeIKShoulderPan(const Eigen::Matrix4f &g_in, const double 
 
   // if all angles==0 , no solution was found
   // if(count==7) return;
-  if(success<0) return;
+  if(success<0){
+	  return;
+  }
 
   std::vector<double> solution_(7, 0.0);
 
@@ -301,7 +303,9 @@ void DUMBOArmIK::computeIKShoulderPan(const Eigen::Matrix4f &g_in, const double 
 			  }
 
 			  for(unsigned int i=0; i<7; i++) solution_[i] = joint_angles_t.j[i];
+			  ROS_INFO("Computed IK solution: ");
 			  solution.push_back(solution_);
+			  for(unsigned int i=0; i<7; i++) std::cout << solution.back()[i];
 
 
 		  }
