@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/dumbo.srdf
   CONFIG:
-    generated_timestamp: 1384457562
+    generated_timestamp: 1385302558

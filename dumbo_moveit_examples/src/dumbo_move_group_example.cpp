@@ -47,22 +47,25 @@ int main(int argc, char **argv)
 	move_group_interface::MoveGroup l_group("left_arm");
 	move_group_interface::MoveGroup r_group("right_arm");
 
-	// set position and orientation of *_arm_7_link with respect to arm_base_link
-	l_group.setPositionTarget(-0.3, 0.5, 0.0);
-	l_group.setRPYTarget(M_PI/2, 0.0, M_PI);
+	// set position and orientation of left_arm_7_link with respect to arm_base_link
+	l_group.setPositionTarget(-0.486, 0.367, 0.0);
+	l_group.setRPYTarget(1.571, 1.571, 3.13);
 
 	l_group.move();
 
+	ros::Duration(3.0).sleep();
 
 	l_group.setNamedTarget("l_default");
 	r_group.setNamedTarget("r_default");
 
-	l_group.asyncMove();
-	r_group.asyncMove();
+	l_group.move();
+
+	r_group.move();
 
 	ros::Duration(5.0).sleep();
 
-	ros::waitForShutdown();
+	ros::shutdown();
+	return 0;
 
 
 }
