@@ -1,71 +1,71 @@
 joint_limits:
   right_arm_4_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   right_arm_5_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.745333333
   right_arm_6_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.745333333
   right_arm_7_joint:
     has_velocity_limits: true
-    max_velocity: 0.663225115758
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1326450231516
+    max_acceleration: 1.745333333
   left_arm_6_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.745333333
   left_arm_7_joint:
     has_velocity_limits: true
-    max_velocity: 0.663225115758
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1326450231516
+    max_acceleration: 1.745333333
   right_arm_1_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   right_arm_2_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   right_arm_3_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   left_arm_1_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   left_arm_2_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   left_arm_3_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   left_arm_4_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.41888
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.65806666
   left_arm_5_joint:
     has_velocity_limits: true
-    max_velocity: 0.523598775598
+    max_velocity: 0.436333333
     has_acceleration_limits: true
-    max_acceleration: 0.1047197551196
+    max_acceleration: 1.745333333
