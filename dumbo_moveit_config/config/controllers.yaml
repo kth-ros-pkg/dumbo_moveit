@@ -1,6 +1,6 @@
 controller_list:
   - name: left_arm_controller
-    ns: follow_joint_trajectory
+    action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints:
@@ -12,7 +12,7 @@ controller_list:
       - left_arm_6_joint
       - left_arm_7_joint
   - name: right_arm_controller
-    ns: follow_joint_trajectory
+    action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints:
